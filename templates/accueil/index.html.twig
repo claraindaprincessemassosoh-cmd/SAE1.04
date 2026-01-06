@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome to my website{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="container mt-5">
+    <h1 class="mb-3">Hello, My name is Masso Clarainda </h1>
+    <p class="lead">
+        I'm a motivated Networks & Telecommunications student, passionate about technology and innovation.
+    </p>
+
+    <div class="mt-4 p-4 bg-light rounded shadow-sm">
+        <h3>Want to know more?</h3>
+        <p>Discover my passions, projects and inspirations.</p>
+
+        <a href="{{ path('loisirs') }}" class="btn btn-primary">
+            Pour en savoir plus
+        </a>
+    </div>
+
+</div>
+{% endblock %}

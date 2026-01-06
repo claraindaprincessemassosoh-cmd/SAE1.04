@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Portfolio{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">Mon Portfolio</h1>
+    <p class="text-center mb-5">
+        Voici une sélection de mes projets, réalisations et travaux personnels.
+    </p>
+
+    <div class="row">
+    <!-- SAÉ1.02 -->
+<img src="{{ asset('images/portfolio1.png') }}"
+     class="img-fluid w-50"
+     alt="SAÉ1.02"
+     data-bs-toggle="modal"
+     data-bs-target="#sae102Modal">
+
+<!-- SAÉ1.03 -->
+<img src="{{ asset('images/portfolio5.jpeg') }}"
+     class="img-fluid w-50"
+     
+     alt="SAÉ1.03"
+     data-bs-toggle="modal"
+     data-bs-target="#sae103Modal">
+
+<!-- R1.06 -->
+<img src="{{ asset('images/portfolio2.jpeg') }}"
+     class="img-fluid rounded w-50"
+     alt="R1.06"
+     
+     style="width: 200px; height: auto;"
+     data-bs-toggle="modal"
+     data-bs-target="#r106Modal">
+<!-- R1.07 -->
+<img src="{{ asset('images/portfolio4.jpeg') }}"
+     class="img-fluid rounded w-50"
+     alt="R1.07"
+    
+     data-bs-toggle="modal"
+     data-bs-target="#r106Modal">
+
+     <!-- MODALE SAÉ1.02 -->
+<div class="modal fade" id="sae102Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">SAÉ1.02</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ce projet consistait à analyser et représenter un réseau informatique simple. J’ai appris à identifier les différents équipements, comprendre leur rôle et représenter l’architecture sous forme de schéma. Ce travail m’a permis de mieux comprendre les bases des réseaux et la logique de communication entre les machines.…</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODALE SAÉ1.03 -->
+<div class="modal fade" id="sae103Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">SAÉ1.03</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Dans cette SAÉ, j’ai découvert le fonctionnement d’un réseau de transmission, aussi bien en Wi‑Fi qu’en câblé. J’ai appris à identifier les différents équipements d’un réseau (box, switch, routeur, point d’accès Wi‑Fi) et à comprendre leur rôle.…</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODALE R1.06 -->
+<div class="modal fade" id="r106Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">R1.06</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Dans ce projet, j’ai appris à utiliser les instruments de mesure essentiels en électronique, comme le multimètre et l’oscilloscope. J’ai réalisé plusieurs montages. Ce travail m’a permis de développer ma précision, ma rigueur et ma capacité à analyser des mesures réelles.…</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODALE R1.07 -->
+<div class="modal fade" id="r106Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">R1.07</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Dans ce module, j’ai appris les bases de la programmation en utilisant un langage structuré. J’ai découvert les variables, les conditions, les boucles, les fonctions et la logique algorithmique. J’ai réalisé plusieurs exercices et petits programmes permettant de résoudre des problèmes concrets. Ce travail m’a permis de développer ma logique, ma rigueur et ma capacité à analyser et structurer un code propre et efficace.….</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+       
+
+{% endblock %}

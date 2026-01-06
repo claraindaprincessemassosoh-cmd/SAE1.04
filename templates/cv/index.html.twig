@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon CV{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+
+    <h1 class="mb-4 text-center">Mon CV</h1>
+
+    <div class="row">
+        <!-- Colonne gauche -->
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <img src="{{ asset('images/photo_profil.jpeg') }}" class="img-fluid rounded mb-3" alt="Photo de profil">
+
+                <h3> Masso Soh Clarainda</h3>
+                <p>Étudiante en Réseaux & Télécommunications</p>
+
+                <hr>
+
+                <h5>Contact</h5>
+                <p>Email : claraindamassosoh@gmail.com</p>
+                <p>Telephone : 06 04 17 11 08</p>
+                <p>Ville : Roanne 42300</p>
+
+                <hr>
+
+                <h5>Competences</h5>
+                <ul>
+                    <li>Microsoft Word/ Excel/ PowerPoint</li>
+                    <li>Symfony </li>
+                    <li>HTML / CSS </li>
+                    <li>Reseaux & Telecoms</li>
+                </ul>
+                <h5>Centres d'interets</h5>
+                <ul>
+                    <li>Cuisine</li>
+                    <li>Danse </li>
+                    <li> Musique</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="col-md-8">
+            <div class="card p-4 shadow-sm">
+
+                <h4>Profil</h4>
+                <p>
+                    Étudiante motivee, passionnée par les technologies, l’informatique,
+                    les réseaux et les projets techniques. 
+                </p>
+
+                <hr>
+                <h4>Formations</h4>
+                <ul>
+                    <li><strong>2024/2025: Baccalauréat scientifique au College catholique bilingue la Retraite(Cameroun)</strong> – </li>
+                </ul>
+
+                <h4>Expériences</h4>
+                <ul>
+                    <li><strong></strong> Projet Symfony – création d’un site web </li>
+                    <li><strong></strong> Projets électroniques (ESP32, DHT22…)</li>
+                </ul>
+                <h4>Langues</h4>
+                <ul>
+                    <li>Français:Langue marternelle </li>
+                </ul>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
